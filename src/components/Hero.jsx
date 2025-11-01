@@ -1,15 +1,28 @@
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-20">
-      <h2 className="text-5xl font-bold mb-4">Hi, I'm John Parrott</h2>
-      <p className="text-slate-400 mb-6 max-w-xl">
-        I’m a backend-focused developer passionate about building efficient systems and exploring full-stack development.
+    <div className="flex-[0.5]">
+      <h1 className="text-5xl font-bold mb-2">John Parrott</h1>
+      <h2 className="text-2xl text-slate-400 mb-6">Backend Developer</h2>
+      <p className="text-slate-400 mb-8">
+        I build reliable, data-driven systems and love exploring how backend
+        architecture powers modern web apps.
       </p>
-      <div className="flex gap-4">
-        <a href="https://github.com/YourUsername" className="bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition">GitHub</a>
-        <a href="https://linkedin.com/in/YourUsername" className="border border-sky-500 px-4 py-2 rounded-lg hover:bg-sky-500 hover:text-white transition">LinkedIn</a>
-        <a href="/resume.pdf" className="text-sky-400 underline">Resume</a>
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-px bg-white"></div>
+        <span className="text-white text-lg font-semibold">About</span>
       </div>
-    </section>
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-px bg-white"></div>
+        <h4 className="text-white text-lg font-semibold">Experience</h4>
+      </div>
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-px bg-white"></div>
+        <h5 className="text-white text-lg font-semibold">Projects</h5>
+      </div>
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-px bg-white"></div>
+        <h6 className="text-white text-lg font-semibold">Connect</h6>
+      </div>
+    </div>
   );
 }
