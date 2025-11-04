@@ -1,9 +1,9 @@
 import pathOptimize from "../assets/PathOptimize.png";
-import webServer from "../assets/webServer.png";
-import studentManagementSystem from "../assets/studentManagementSystem.png";
+import webServer from "../assets/WebServer.png";
+import studentManagementSystem from "../assets/StudentManagementSystem.png";
 import portfolio from "../assets/Portfolio.png";
 import shinkenshi from "../assets/Shinkenshi.png";
-import stockViewer from "../assets/stockViewer.png";
+import stockViewer from "../assets/StockViewer.png";
 
 export default function Projects() {
     return (
