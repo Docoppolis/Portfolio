@@ -28,6 +28,10 @@ export default function App() {
     };
     requestAnimationFrame(raf);
 
+    lenis.on("scroll", () => {
+      window.dispatchEvent(new Event("scroll"));
+    });
+
     return () => lenis.destroy();
   }, []);
 
@@ -38,20 +42,19 @@ export default function App() {
 
       {/* Left column */}
       <div className="w-[40%] sticky top-0 h-screen flex items-center justify-center pb-90">
-        <Hero />
+        <Hero lenisRef={lenisRef} />
       </div>
 
       {/* Right column (Lenis-controlled scroll area) */}
       <div className="flex-1 pr-[calc(100vw-100%)] pt-20">
         <div className="max-w-3xl mx-auto px-6 py-16 space-y-24">
-          <About />
-          <Experience lenisRef={lenisRef} />
+          <section id="about"><About /></section>
+          <section id="experience"><Experience lenisRef={lenisRef} /></section>
         </div>
 
-        <Skills />
+        <section id="skills"><Skills /></section>
 
-        {/*Projects*/}
-        <Projects />
+        <section id="projects"><Projects /></section>
 
 
       </div>
