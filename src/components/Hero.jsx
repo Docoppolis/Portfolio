@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { SocialIcon } from 'react-social-icons';
 
 export default function Hero({ lenisRef }) {
   const [activeSection, setActiveSection] = useState(null);
@@ -63,9 +64,17 @@ export default function Hero({ lenisRef }) {
         />
       </div>
 
-      
+      <div className="absolute bottom-6 right-20 w-full">
+        <div className="flex justify-center space-x-4">
+          <SocialIcon url="https://github.com/Docoppolis" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
+          <SocialIcon url="https://www.linkedin.com/in/john-parrott-6b88ba27a/" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
+          <SocialIcon url="https://www.instagram.com/john.parrott653" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
+        </div>
+      </div>
 
     </div>
+    
+    
   );
 }
 
