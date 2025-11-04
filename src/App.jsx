@@ -36,18 +36,18 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-slate-900 text-slate-100 flex">
+    <div className="relative min-h-screen bg-slate-900 text-slate-100 flex flex-col lg:flex-row">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-violet-900 opacity-[0.25] pointer-events-none" />
 
       {/* Left column */}
-      <div className="w-[40%] sticky top-0 h-screen flex items-center justify-center pb-90">
+      <div className="lg:w-[40%] w-full lg:sticky top-0 h-auto lg:h-screen flex items-center justify-center pb-20">
         <Hero lenisRef={lenisRef} />
       </div>
 
       {/* Right column (Lenis-controlled scroll area) */}
-      <div className="flex-1 pr-[calc(100vw-100%)] pt-20">
-        <div className="max-w-3xl mx-auto px-6 py-16 space-y-24">
+      <div className="flex-1 pr-[calc(100vw-100%)] pt-10 lg:pt-20">
+        <div className="max-w-3xl mx-auto px-6 py-10 space-y-16">
           <section id="about"><About /></section>
           <section id="experience"><Experience lenisRef={lenisRef} /></section>
         </div>
