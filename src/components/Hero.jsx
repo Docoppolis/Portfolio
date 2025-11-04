@@ -31,11 +31,11 @@ export default function Hero({ lenisRef }) {
   };
 
   return (
-    <div className="flex-[0.5]">
+    <div className="px-6 sm:px-10 text-center lg:text-left">
       {/* Header content */}
-      <h1 className="text-5xl font-bold mb-2">John Parrott</h1>
-      <h2 className="text-2xl text-slate-400 mb-6">Backend Developer</h2>
-      <p className="text-slate-400 mb-8">
+      <h1 className="text-4xl sm:text-5xl font-bold mb-2">John Parrott</h1>
+      <h2 className="text-xl sm:text-2xl text-slate-400 mb-6">Backend Developer</h2>
+      <p className="text-slate-400 text-sm sm:text-base mb-8">
         I build reliable, data-driven systems and enjoy exploring how backend
         architecture powers modern web apps.
       </p>
