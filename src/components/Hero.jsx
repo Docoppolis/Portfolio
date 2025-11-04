@@ -14,7 +14,7 @@ export default function Hero({ lenisRef }) {
           }
         });
       },
-      { threshold: 0.5 } // triggers when 50% of section is visible
+      { rootMargin: "-20% 0px -70% 0px" }
     );
 
     sections.forEach((section) => observer.observe(section));
