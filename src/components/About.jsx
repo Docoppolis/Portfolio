@@ -19,7 +19,7 @@ export default function Hero() {
                 optimize workflows or integrating database systems into full-stack applications, I find 
                 satisfaction in solving complex problems with elegant technical solutions.
             </p>
-            <p className="text-slate-400 leading-relaxed mb-6">
+            <p className="text-slate-400 leading-relaxed mb-30">
                 Outside of development, you can usually find me on The Rift, OTPing Ekko and 
                 occasionally convincing myself my teammates are the problem.
             </p>    
