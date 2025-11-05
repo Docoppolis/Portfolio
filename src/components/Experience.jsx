@@ -9,15 +9,14 @@ export default function Experience({ lenisRef }) {
     const element = containerRef.current;
     const line = lineRef.current;
 
-    if (!lenis || !element || !line) return;
+    if (!element || !line) return;
 
-    const handleLenisScroll = () => {
+    const handleScroll = () => {
       const rect = element.getBoundingClientRect();
       const windowHeight = window.innerHeight;
       const sectionTop = rect.top;
       const sectionHeight = rect.height;
 
-      // Start the line later (40% viewport offset)
       const startOffset = windowHeight * 0.6;
       const progress = windowHeight - sectionTop - startOffset;
       const percent = Math.min(
@@ -28,15 +27,26 @@ export default function Experience({ lenisRef }) {
       line.style.height = `${percent * 100}%`;
     };
 
-    handleLenisScroll();
+    // Run once immediately
+    handleScroll();
 
-    const updateLoop = () => {
-      handleLenisScroll();
-      requestAnimationFrame(updateLoop);
+    // Continuous loop
+    let rafId;
+    const loop = () => {
+      handleScroll();
+      rafId = requestAnimationFrame(loop);
     };
-    requestAnimationFrame(updateLoop);
+    rafId = requestAnimationFrame(loop);
 
-    return () => cancelAnimationFrame(updateLoop);
+    // Also listen to Lenis scroll if available
+    if (lenis) {
+      lenis.on("scroll", handleScroll);
+    }
+
+    return () => {
+      if (lenis) lenis.off("scroll", handleScroll);
+      cancelAnimationFrame(rafId);
+    };
   }, [lenisRef]);
 
   return (
