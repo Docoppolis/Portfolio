@@ -41,7 +41,7 @@ export default function App() {
       <div className="absolute inset-0 bg-violet-900 opacity-[0.25] pointer-events-none" />
 
       {/* Left column */}
-      <div className="lg:w-[40%] w-full lg:sticky top-0 h-auto lg:h-screen flex items-center justify-center pb-20">
+      <div className="lg:w-[40%] w-full lg:sticky top-0 h-auto lg:h-screen flex items-center justify-center lg:pb-20">
         <Hero lenisRef={lenisRef} />
       </div>
 

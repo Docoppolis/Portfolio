@@ -52,28 +52,30 @@ export default function Experience({ lenisRef }) {
   return (
     <section
       ref={containerRef}
-      className="relative pl-4 sm:pl-6 md:pl-8"
+      className="relative pl-4 sm:pl-6 lg:pl-8"
     >
       {/* Static track */}
-      <div className="hidden md:block absolute left-[7px] top-0 bottom-0 w-px bg-slate-700"></div>
+      <div className="hidden lg:block absolute left-[7px] top-0 bottom-0 w-px bg-slate-700"></div>
 
       {/* Animated violet line */}
       <div
         ref={lineRef}
-        className="hidden md:block absolute left-[7px] top-0 w-px bg-violet-500 transition-[height] duration-500 ease-out rounded-full"
+        className="hidden lg:block absolute left-[7px] top-0 w-px bg-violet-500 transition-[height] duration-500 ease-out rounded-full"
         style={{ height: 0 }}
       ></div>
+
+      <div className="lg:hidden text-white/70 text-lg font-semibold text-center mb-8"> Experience</div>
 
       {/* Experience entries */}
       <div className="space-y-20">
 
         {/* Entry 1 */}
-        <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-8 items-start">
 
           {/* LEFT SIDE */}
-          <div className="relative pl-8 md:pl-1">
+          <div className="relative lg:pl-1">
             {/* Circle positioned slightly inside on mobile, outside on desktop */}
-            <div className="hidden md:block absolute top-1 -left-20">
+            <div className="hidden lg:block absolute top-1 -left-20">
               <div className="relative w-10 h-10">
                 <div className="absolute inset-0 bg-violet-500/40 rounded-full blur-sm"></div>
                 <div className="absolute inset-0 border-2 border-violet-600/75 rounded-full"></div>
@@ -98,11 +100,11 @@ export default function Experience({ lenisRef }) {
         </div>
 
         {/* Entry 2 */}
-        <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-8 items-start">
 
           {/* LEFT SIDE */}
-          <div className="relative pl-8 md:pl-1">
-            <div className="hidden md:block absolute top-1 -left-20">
+          <div className="relative lg:pl-1">
+            <div className="hidden lg:block absolute top-1 -left-20">
               <div className="relative w-10 h-10">
                 <div className="absolute inset-0 bg-violet-500/40 rounded-full blur-sm"></div>
                 <div className="absolute inset-0 border-2 border-violet-600/75 rounded-full"></div>
@@ -128,11 +130,11 @@ export default function Experience({ lenisRef }) {
         </div>
 
         {/* Entry 3 */}
-        <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-8 items-start">
 
           {/* LEFT SIDE */}
-          <div className="relative pl-8 md:pl-1">
-            <div className="hidden md:block absolute top-1 -left-20">
+          <div className="relative lg:pl-1">
+            <div className="hidden lg:block absolute top-1 -left-20">
               <div className="relative w-10 h-10">
                 <div className="absolute inset-0 bg-violet-500/40 rounded-full blur-sm"></div>
                 <div className="absolute inset-0 border-2 border-violet-600/75 rounded-full"></div>
