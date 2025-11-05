@@ -56,6 +56,7 @@ const projects = [
 export default function Projects() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 space-y-10">
+      <div className="lg:hidden text-white/70 text-lg font-semibold text-center mb-8"> Projects</div>
       {projects.map(({ title, img, link, description }) => (
         <a
           key={title}

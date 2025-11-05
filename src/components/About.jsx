@@ -1,6 +1,7 @@
 export default function Hero() {
     return (
         <>
+            <div className="lg:hidden text-white/70 text-lg font-semibold text-center mb-8"> About</div>
             <p className="text-slate-400 leading-relaxed mb-6">
                 I’m John Parrott, a Computer Science graduate from the University of South Florida 
                 with a passion for backend development and system architecture. I’m drawn to the logic 

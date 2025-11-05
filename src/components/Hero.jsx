@@ -31,17 +31,25 @@ export default function Hero({ lenisRef }) {
   };
 
   return (
-    <div className="px-6 sm:px-10 text-center lg:text-left">
+    <div className="px-6 sm:px-10 text-center mt-15 lg:text-left lg:ml-10">
       {/* Header content */}
       <h1 className="text-4xl sm:text-5xl font-bold mb-2">John Parrott</h1>
       <h2 className="text-xl sm:text-2xl text-slate-400 mb-6">Backend Developer</h2>
-      <p className="text-slate-400 text-sm sm:text-base mb-8">
+      <p className="text-slate-400 text-sm sm:text-base lg:mb-8">
         I build reliable, data-driven systems and enjoy exploring how backend
         architecture powers modern web apps.
       </p>
 
+      <a
+        href="/resume_JOHNPARROTT.pdf"
+        download
+        className="inline-block bg-violet-600 text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-violet-500 transition-colors duration-300 mt-10 mb-0 lg:mt-0 lg:mb-8"
+      >
+        Download Resume
+      </a>
+
       {/* Navigation Tabs */}
-      <div className="flex flex-col space-y-2">
+      <div className="hidden lg:flex flex-col space-y-2">
         <Tab
           label="About"
           active={activeSection === "about"}
@@ -64,13 +72,13 @@ export default function Hero({ lenisRef }) {
         />
       </div>
 
-      <div className="absolute bottom-6 right-20 w-full">
-        <div className="flex justify-center space-x-4">
-          <SocialIcon url="https://github.com/Docoppolis" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
-          <SocialIcon url="https://www.linkedin.com/in/john-parrott-6b88ba27a/" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
-          <SocialIcon url="https://www.instagram.com/john.parrott653" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
-        </div>
+      
+      <div className="fixed lg:left-4 lg:right-4 bottom-4 right-4 flex space-x-4 z-50">
+        <SocialIcon url="https://github.com/Docoppolis" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
+        <SocialIcon url="https://www.linkedin.com/in/john-parrott-6b88ba27a/" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
+        <SocialIcon url="https://www.instagram.com/john.parrott653" bgColor="#7c3aed" target="_blank" rel="noopener noreferrer" />
       </div>
+      
 
     </div>
     

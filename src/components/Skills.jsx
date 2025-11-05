@@ -36,14 +36,15 @@ export default function Skills() {
   ];
 
   return (
-    <div className="w-full px-4 sm:px-8 py-10 flex justify-center">
+    
+    <div className="w-full px-4 sm:px-8 py-10 flex flex-col justify-center items-center">
+      <div className="lg:hidden text-white/70 text-lg font-semibold text-center mb-8"> Skills</div>
       <div
         className="
           grid 
           grid-cols-2 
-          sm:grid-cols-3 
-          md:grid-cols-4 
-          lg:grid-cols-5 
+          sm:grid-cols-3
+          xl:grid-cols-4
           gap-6 
           justify-items-center
         "
