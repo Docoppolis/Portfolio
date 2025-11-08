@@ -91,7 +91,7 @@ export default function Experience({ lenisRef }) {
 
           {/* RIGHT SIDE */}
           <div>
-            <p className="text-slate-400">
+            <p className="text-slate-300">
               Built backend-focused applications including a custom C# web server and
               a full-stack student management system. Focused on scalability, database
               integration, and system reliability.
@@ -119,7 +119,7 @@ export default function Experience({ lenisRef }) {
 
           {/* RIGHT SIDE */}
           <div>
-            <p className="text-slate-400">
+            <p className="text-slate-300">
               During my time at USF, I built a strong foundation in computer science through coursework, 
               research, and hands-on projects. I gained experience across a range of technologies, 
               including backend development, databases, and software design. Beyond academics, I applied what 
@@ -149,7 +149,7 @@ export default function Experience({ lenisRef }) {
 
           {/* RIGHT SIDE */}
           <div>
-            <p className="text-slate-400">
+            <p className="text-slate-300">
               Worked in a fast-paced dining environment, serving residents with patience
               and efficiency. Learned to communicate effectively and manage time under
               pressure while maintaining a positive atmosphere.
