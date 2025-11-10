@@ -42,10 +42,10 @@ export default function Hero({ lenisRef }) {
 
       <a
         href="/resume_JOHNPARROTT.pdf"
-        download
+        target = "_blank"
         className="inline-block bg-violet-600 text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-violet-500 transition-colors duration-300 mt-10 mb-0 lg:mt-0 lg:mb-8"
       >
-        Download Resume
+        Resume
       </a>
 
       {/* Navigation Tabs */}
