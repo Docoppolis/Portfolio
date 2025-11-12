@@ -93,7 +93,7 @@ export default function Experience({ lenisRef }) {
           <div>
             <p className="text-slate-300">
               Built backend-focused applications including a custom C# web server and
-              a full-stack student management system. Focused on scalability, database
+              a full-stack student management system. Emphasized scalability, database
               integration, and system reliability.
             </p>
           </div>
@@ -113,14 +113,14 @@ export default function Experience({ lenisRef }) {
             </div>
 
             <h3 className="text-lg font-semibold">Computer Science Student</h3>
-            <p className="text-slate-400 text-sm">University of South Florida</p>
+            <p className="text-slate-400 text-sm">University of South Florida, Tampa</p>
             <p className="text-slate-500 text-sm mt-1">2020–2025</p>
           </div>
 
           {/* RIGHT SIDE */}
           <div>
             <p className="text-slate-300">
-              During my time at USF, I built a strong foundation in computer science through coursework, 
+              While at USF, I built a strong foundation in computer science through coursework, 
               research, and hands-on projects. I gained experience across a range of technologies, 
               including backend development, databases, and software design. Beyond academics, I applied what 
               I learned through personal and group projects, from full-stack web applications to custom backend 
@@ -143,7 +143,7 @@ export default function Experience({ lenisRef }) {
             </div>
 
             <h3 className="text-lg font-semibold">Server</h3>
-            <p className="text-slate-400 text-sm">The Fountains at Lake Pointe Woods</p>
+            <p className="text-slate-400 text-sm">The Fountains at Lake Pointe Woods, Sarasota</p>
             <p className="text-slate-500 text-sm mt-1">2020–2023</p>
           </div>
 
